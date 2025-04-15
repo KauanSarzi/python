@@ -1,7 +1,7 @@
-#Gabriel Freitas Curral Miwa 10435826
 #Kauan Sarzi da Rocha 10427235 
-#Victor Aguiar Santana 10440059
 
+
+#função para carregar os dados
 def carregar_dados():
     dataset = []                    #lista que irá receber todos os dados do arquivo
     with open('emack.csv', 'r') as file: 
@@ -16,13 +16,15 @@ def carregar_dados():
     print (dataset)
     return dataset
 
-def listarCategorias(dados):
+#função para listar categorias
+def listarCategorias(dados): #recebe como parametro dados, que é o dataset retornado pela função anterior
     categorias = []
     for produto in dados:
         if produto["categoryName"] not in categorias:
             categorias.append(produto["categoryName"])
     return categorias
 
+#função que lista produtos por categoria
 def listarProdutosCategoria(dados, categoria):
     produtos = []
     for produto in dados:
@@ -30,6 +32,7 @@ def listarProdutosCategoria(dados, categoria):
             produtos.append(produto)
     return produtos
 
+#
 def ultVendaMes(produto):
     return int(produto["boughtInLastMonth"])
 
@@ -195,7 +198,7 @@ def gerarHtml_ProdutosPorCategoriaEscolhida(dados):
         print("Escolha inválida.")
 
 #programa principal
-dados = carregar_dados()
+dados = carregar_dados() # carregar dados/ dataset que é retornado nessa função é atribuido a DADOS, que tem acesso global
 while True:
     opcao = menu()
     if opcao == 7:
