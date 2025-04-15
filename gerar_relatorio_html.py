@@ -36,15 +36,6 @@ def listarProdutosCategoria(dados, categoria):
 def ultVendaMes(produto):
     return int(produto["boughtInLastMonth"])
 
-def menu():
-    print ("1- contagem de produtos por categoria")
-    print("2- percentual de produtos por categoria")
-    print("3- Avaliar a proporção de produtos best-sellers em cada categoria")
-    print("4- Identificar os 10 produtos mais caros e mais baratos no geral")
-    print("5- Listar os produtos por categoria escolhida ")
-    print("6- Gerar um relatório em HTML demonstrando os Top 10 bestsellers por categoria")
-    op = int(input())
-    return op
 
 
 def cont_produtos_categoria(dados):
@@ -196,6 +187,20 @@ def gerarHtml_ProdutosPorCategoriaEscolhida(dados):
         print(f"Relatório de produtos da categoria '{categoria_escolhida}' gerado: {filename}")
     else:
         print("Escolha inválida.")
+
+
+
+
+#apresenta o menu
+def menu():
+    print ("1- contagem de produtos por categoria")
+    print("2- percentual de produtos por categoria")
+    print("3- Avaliar a proporção de produtos best-sellers em cada categoria")
+    print("4- Identificar os 10 produtos mais caros e mais baratos no geral")
+    print("5- Listar os produtos por categoria escolhida ")
+    print("6- Gerar um relatório em HTML demonstrando os Top 10 bestsellers por categoria")
+    op = int(input())
+    return op
 
 #programa principal
 dados = carregar_dados() # carregar dados/ dataset que é retornado nessa função é atribuido a DADOS, que tem acesso global
