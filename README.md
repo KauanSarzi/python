@@ -66,3 +66,32 @@ Contém uma base de produtos estruturada com os seguintes campos principais:
 - **Geração de Relatório HTML de Produtos por Categoria Escolhida**
 
 ---
+
+## Como Executar
+
+1. Certifique-se de ter o Python 3 instalado.
+2. Instale as dependências (nenhuma biblioteca externa necessária).
+3. Execute o script:
+
+```bash
+python gerar_relatorio_html.py
+```
+
+4. Escolha a opção desejada no menu interativo.
+
+---
+
+## 📁 Estrutura do Repositório
+
+```
+├── emack.csv                        # Dataset de produtos
+├── gerar_relatorio_html.py         # Script com funcionalidades de análise
+├── Projeto 1 - AlgProgI_Estacionamento.pdf  # Documento do sistema de estacionamento
+└── README.md
+```
+
+---
+
+## 👥 Autor
+- Kauan Sarzi da Rocha
+
