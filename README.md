@@ -81,7 +81,7 @@ python gerar_relatorio_html.py
 
 ---
 
-## 📁 Estrutura do Repositório
+##  Estrutura do Repositório
 
 ```
 ├── emack.csv                        # Dataset de produtos
