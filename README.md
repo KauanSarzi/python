@@ -15,7 +15,7 @@ Este repositório contém dois projetos complementares:
 ### Funcionalidades:
 
 - **Cadastro de Tarifas**
-  - Tarifas específicas para *carros pequenos, grandes* e *motos*, com valores para até 3h e adicionais.
+  - Tarifas específicas para **carros pequenos, grandes** e **motos**, com valores para até 3h e adicionais.
   - Permite alterações das tarifas a qualquer momento.
 
 - **Controle de Entrada e Saída**
@@ -42,7 +42,7 @@ Este repositório contém dois projetos complementares:
 
 ---
 
-## 📊 Analisador de Produtos com Python
+## Analisador de Produtos com Python
 
 ### Dataset: `emack.csv`
 
